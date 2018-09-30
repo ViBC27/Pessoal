@@ -17,13 +17,13 @@ body {
 #content {
 
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 170vh auto;
     grid-template-rows: auto 100vh auto;
     grid-gap: 1vh;
     grid-template-areas:
-        "header header header"
-        "main main aside"
-        "footer footer footer";
+        "header header"
+        "main aside"
+        "footer footer";
 
 }
 
@@ -245,10 +245,39 @@ main {
 }
 
 aside {
-
+    display: flex;
     grid-area: aside;
-    background: blue;
 }
+
+#sidebar {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-gap: 0.6rem;
+    grid-template-areas:"latest"
+                        "ambrosio"
+                        "ambrosina";
+}
+
+#late {
+    grid-area: latest;
+    padding: 20px;
+    background: #d9d9d9;
+    border-radius: 5px;
+}
+
+#ambrosio {
+    grid-area: ambrosio;
+    background: #d9d9d9;
+    border-radius: 5px;
+}
+
+#ambrosina {
+    grid-area: ambrosina;
+    background: #d9d9d9;
+    border-radius: 5px;
+}
+
 
 footer {
 
