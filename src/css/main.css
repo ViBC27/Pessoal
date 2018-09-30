@@ -11,19 +11,19 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #333;
-    background: #999;
+    background: #F5F6F8;
 }
 
 #content {
 
     display: grid;
-    grid-template-columns: 170vh auto;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto 100vh auto;
     grid-gap: 1vh;
     grid-template-areas:
-        "header header"
-        "main aside"
-        "footer footer";
+        "header header header"
+        "main main aside"
+        "footer footer footer";
 
 }
 
@@ -38,7 +38,7 @@ header {
     grid-area: header;
     display: flex;
     flex-flow: row nowrap;
-    background-color: whitesmoke;
+    background-color: #FFF;
     border-bottom: .5vh solid #e1ebef;
     padding-top: .5vh;
     font-weight: 600;
@@ -129,16 +129,17 @@ header .btn-main:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 20vh;
+    width: 17vh;
     height: 100vh;
-    background: whitesmoke;
+    background: #FFF;
+    box-shadow: 5px 0 10px #e4e7ed;
 }
 
 #h-nav {
-    -webkit-transform: translateX(-20vh);
-    -moz-transform: translateX(-20vh);
-    -ms-transform: translateX(-20vh);
-    transform: translateX(-20vh);
+    -webkit-transform: translateX(-17vh);
+    -moz-transform: translateX(-17vh);
+    -ms-transform: translateX(-17vh);
+    transform: translateX(-17vh);
     -webkit-transition: all .25s linear;
     -moz-transition: all .25s linear;
     -ms-transition: all .25s linear;
@@ -159,10 +160,10 @@ header,
 
 .menu-active header,
 .menu-active #content {
-    -webkit-transform: translateX(20vh);
-    -moz-transform: translateX(20vh);
-    -ms-transform: translateX(20vh);
-    transform: translateX(20vh);
+    -webkit-transform: translateX(17vh);
+    -moz-transform: translateX(17vh);
+    -ms-transform: translateX(17vh);
+    transform: translateX(17vh);
 }
 
 /* Login */
@@ -174,22 +175,18 @@ header,
     margin: 1vh auto;
     display: flex;
     flex-flow: column nowrap;
-    align-content: space-between;
-    background: #e1ebef;
     border-radius: .2vh;
-    
+
 }
 
-#img-login
-{
+#img-login {
     width: 10vh;
     height: 10vh;
     margin: 1vh auto;
 }
 
-#title-login
-{
-    
+#title-login {
+
     width: 13vh;
     margin: 0 auto 1vh auto;
     text-align: center;
@@ -197,9 +194,9 @@ header,
 }
 
 #login .btns {
-    
+
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
@@ -208,10 +205,11 @@ header,
     background: #9398EC;
     border-bottom: .3vh solid #7277D6;
     padding: .5vh 1.70vh;
+    margin: .1vh;
 
 }
 
-#login .btn:hover{
+#login .btn:hover {
     color: #7277D6;
     background: rgba(0, 0, 0, 0);
     border: none;
@@ -223,20 +221,39 @@ header,
 
     margin: 2vh 0;
     list-style: none;
-    background: red;
+    font-size: 13px;
 }
 
-#h-nav ul li
-{
-    
-    padding: 1vh;
-    background: blue;
-    border-left: 5px solid red;
+#h-nav .icons:first-of-type {
+    margin-right: 1vh;
+}
 
+#h-nav .icons:last-of-type {
+
+    float: right;
+    margin-top: .3vh;
+}
+
+
+#h-nav ul li a {
+    display: block;
+    height: 100%;
+    padding: .5vh;
+
+}
+
+#h-nav ul li a:not(.active):hover {
+
+    background: #e1ebef;
+    transition: all 1s ease;
+
+}
+
+#h-nav ul li .active {
+    background: #e1ebef;
 }
 
 /* ***** */
-
 
 main {
 
