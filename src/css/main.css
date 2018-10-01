@@ -272,7 +272,21 @@ a {
 footer {
 
     grid-area: footer;
-    background: green;
+    background: #D8434D;
+}
+
+#contact-right{
+    color: white;
+    float: right;
+    padding-top: 3vh;
+    padding-right: 2vh;
+
+}
+#contact{
+    color: white;
+    float: right;
+    padding-top: 3vh;
+    padding-right: 10vh;
 }
 
 
@@ -398,7 +412,30 @@ main article footer {
 }
 
 aside {
-
+    color: white;
+    padding: 10px;
     grid-area: aside;
-    background-color: aqua;
+    background-color: #D8434D;
+    display: grid;
+    grid-gap: 0.6rem;
+    grid-template-areas:"latest"
+                        "ambrosio"
+                        "ambrosina";
 }
+
+#latest {
+    grid-area: latest;
+    border-radius: 5px;
+}
+
+#ambrosio {
+    color: white;
+    grid-area: ambrosio;
+    border-radius: 5px;
+}
+
+#ambrosina {
+    grid-area: ambrosina;
+    border-radius: 5px;
+}
+
