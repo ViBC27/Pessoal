@@ -11,5 +11,5 @@ O Rate-us visa unir graduandos e profissionais do Restaurante Universitário(RU)
 Esse projeto foi:
 
 - Motivado pelo professor Fábio Paraguaçu da disciplina Internet e Web 2018.1 do curso de Ciência da Computação - UFAL(Universidade Federal de Alagoas).
-- Colaborado por Vinicius Monteiro Pontes e Ramon Basto Callado Lima Lopes.
+- Colaborado por Vitor Barcelos de Cerqueira, Suleimane Maniche Ducuré,  Vinicius Monteiro Pontes e Ramon Basto Callado Lima Lopes.
 - Liberado para cópia com os devidos créditos.
